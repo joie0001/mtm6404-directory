@@ -29,7 +29,7 @@ const list = clientsArray => {
     return clients.find(client => client.index === index);
   };
   
-  // search() — Returning array of clients whose name includes the query
+  // search() — Returning array of clients with name that includes the query
   const search = query => {
     const lowerQuery = query.toLowerCase();
     return clients.filter(client => client.name.toLowerCase().includes(lowerQuery));
